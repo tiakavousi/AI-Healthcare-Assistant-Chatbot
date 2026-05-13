@@ -1,0 +1,31 @@
+The Agile Roadmap: Monolith to Microservices
+----
+Epic 1: The Data Layer (Docker & PostgreSQL)
+
+Goal: Move away from local files to a robust, containerized vector database.
+
+Deliverable: A running Postgres instance with the pgvector extension, accessible via a database client.
+------
+Epic 2: The Backend API (FastAPI)
+
+Goal: Port the PDF processing, chunking, and embedding logic into dedicated REST API endpoints.
+
+Deliverable: Swagger UI (/docs) showing working endpoints for document upload and text embedding.
+-----
+Epic 3: Conversational Memory & LLM Integration
+
+Goal: Upgrade the LangChain logic to include conversational history (memory) and connect it to the pgvector database.
+
+Deliverable: A working chat endpoint in FastAPI that remembers follow-up questions.
+-----
+Epic 4: The Frontend UI (Next.js, React, Tailwind)
+
+Goal: Rebuild the user interface from Streamlit to a customized React application.
+
+Deliverable: A clean, responsive web app where users can upload PDFs and chat with the bot.
+-----
+Epic 5: Orchestration (Docker Compose)
+
+Goal: Tie the frontend, backend, and database together so the entire app boots up with a single command.
+
+Deliverable: A docker-compose.yml file that spins up the full stack.
